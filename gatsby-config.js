@@ -1,14 +1,16 @@
 const config = require('./config')
 
 module.exports = {
-  siteMetadata: config,
   plugins: [
     {
-      resolve: `gatsby-theme-medium-to-own-blog`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        config,
-        webmentionsToken: process.env.WEBMENTIONS_TOKEN,
+        name: `content`,
+        path: `${__dirname}/content/`,
       },
     },
+    // other plugins
   ],
+};
+
 }
