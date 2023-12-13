@@ -1,4 +1,4 @@
-const config = require('./config')
+const config = require('./config');
 
 module.exports = {
   plugins: [
@@ -12,5 +12,3 @@ module.exports = {
     // other plugins
   ],
 };
-
-}
